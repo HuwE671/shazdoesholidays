@@ -1,0 +1,27 @@
+{
+  "css": [
+    "styles/app.css"
+  ],
+  "js": [
+    "core/data.js",
+    "core/state.js",
+    "core/helpers.js",
+    "core/pricing.js",
+    "core/links.js",
+    "core/strip.js",
+    "pages/plan/plan.js",
+    "pages/stay/stay.js",
+    "pages/travel/travel.js",
+    "pages/itinerary/itinerary.js",
+    "core/steps.js",
+    "core/tours.js",
+    "pages/budget/budget.js",
+    "pages/trips/trips.js",
+    "pages/help/help.js",
+    "pages/deals/deals.js",
+    "pages/settings/settings.js",
+    "core/sync.js",
+    "core/plans-popup.js",
+    "core/router.js"
+  ]
+}

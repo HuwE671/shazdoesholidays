@@ -1,0 +1,38 @@
+<!-- DEALS -->
+<section class="view" id="view-deals" aria-labelledby="h-deals">
+  <h2 id="h-deals">Find the best deals</h2>
+  <p class="muted">Tell it where you'd happily go, when, and the most you'd pay. We compare every fare with the usual price for that route, so you can see a real deal at a glance. Search now, or save it as an alert and we'll email you when prices drop, with a hotel idea for each trip.</p>
+  <div class="plans-teaser"><span>Deal alerts by email: £3 a month, or £29 a year.</span><button class="btn gold sm" type="button" id="openPlans">See plans and today's deals</button></div>
+  <div id="dealStatus"></div>
+  <form class="panel" id="dealForm" onsubmit="return false" aria-label="Deal criteria">
+    <div class="grid2">
+      <div class="field"><label for="d-name">Alert name</label><input id="d-name" maxlength="80" placeholder="Autumn sun, spring city break…"></div>
+      <div class="field"><label for="d-origin">Flying from</label><select id="d-origin"></select></div>
+    </div>
+    <span class="lbl">Where you'd go (pick any)</span>
+    <div class="chips" id="d-dests" role="group" aria-label="Destinations" style="margin:6px 0 10px"></div>
+    <div class="field pp" style="max-width:420px"><label for="p-deal">Add any destination</label><input id="p-deal" data-pp="deal" placeholder="Search a city or airport code" autocomplete="off"><div class="pp-res"></div></div>
+    <div class="grid3">
+      <div class="field"><label for="d-from">Leave from</label><input type="date" id="d-from"></div>
+      <div class="field"><label for="d-to">Leave by</label><input type="date" id="d-to"></div>
+      <div class="field"><label for="d-max">Max £ per person (return flight)</label><input type="number" id="d-max" min="10" step="10" inputmode="numeric"></div>
+      <div class="field"><label for="d-minn">Min nights</label><input type="number" id="d-minn" min="1" max="30" inputmode="numeric"></div>
+      <div class="field"><label for="d-maxn">Max nights</label><input type="number" id="d-maxn" min="1" max="30" inputmode="numeric"></div>
+      <div class="field"><label for="d-trav">Travellers</label><input type="number" id="d-trav" min="1" max="9" inputmode="numeric"></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label for="d-freq">Email me</label><select id="d-freq"><option value="daily">Every morning, when there's something new</option><option value="weekly">Once a week, a round-up</option><option value="bigdrop">Only big price drops (25% or more below usual)</option></select></div>
+      <div class="field" id="d-passWrap" hidden><label for="d-pass">Passcode</label><input id="d-pass" type="password" autocomplete="current-password"></div>
+    </div>
+    <label class="small" style="display:flex;gap:8px;align-items:center;margin-bottom:8px"><input type="checkbox" id="d-direct"> Direct flights only</label>
+    <label class="small" style="display:flex;gap:8px;align-items:center;margin-bottom:16px"><input type="checkbox" id="d-hotels" checked> Include a hotel idea for each deal (well rated, good value, for the same dates)</label>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <button class="btn" type="button" id="d-search">Find deals now</button>
+      <button class="btn gold" type="button" id="d-save">Save as email alert</button>
+    </div>
+  </form>
+  <h3 style="margin-top:28px" id="dealHead" hidden>Deals found</h3>
+  <div id="dealResults"></div>
+  <h3 style="margin-top:28px">Saved alerts</h3>
+  <div id="alertList"><p class="muted small">Loading…</p></div>
+</section>

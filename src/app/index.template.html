@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shaz does holidays</title>
+<meta name="theme-color" content="#0F3D57">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Shaz holidays">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="description" content="Find places to stay, compare ways to get there by price level, build a day-by-day itinerary and log every trip and its spending.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌴</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* @css */
+</style>
+<script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+  (function () {
+      var script = document.createElement("script");
+      script.async = 1;
+      script.setAttribute("data-cmp-ab","2");
+      script.src = 'https://emrldco.com/NTgxMDYz.js?t=581063';
+      document.head.appendChild(script);
+  })();
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Shaz does holidays home page">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#F4B23E" stroke-width="3"/><path d="M16 5l4 11-4 11-4-11z" fill="#fff"/><circle cx="16" cy="16" r="2.4" fill="#0F3D57"/></svg>
+      <span id="brandName">Shaz does holidays</span>
+    </a>
+    <nav class="tabs" aria-label="Main">
+      <a href="#plan">Plan</a>
+      <a href="#travel">Get there</a>
+      <a href="#stay">Stay</a>
+      <a href="#itinerary">Itinerary</a>
+      <a href="#budget">Budget</a>
+      <a href="#deals">Deals</a>
+      <a href="#trips">Trip log</a>
+      <a href="#connect">Help</a>
+      <a href="#settings">Settings</a>
+    </nav>
+  </div>
+</header>
+
+<div class="strip" aria-live="polite"><div class="wrap" id="strip"></div></div>
+
+<main class="wrap">
+
+<!-- @include pages/plan/plan.html -->
+
+<!-- @include pages/stay/stay.html -->
+
+<!-- @include pages/travel/travel.html -->
+    <section class="compare-box" id="compareBox" aria-labelledby="everyWay">
+      <div class="cmp-head"><h3 id="everyWay">Compare every way there</h3><div class="chips" id="travelTier" role="group" aria-label="Price level for transport"></div></div>
+      <p class="small muted" style="margin:0 0 10px">Door-to-door time and return cost for your group. Choose one to use it in your budget.</p>
+      <div id="compareBars"></div>
+      <details class="opt-details" id="optDetails"><summary>Full details of each option</summary><div id="travelResults"></div></details>
+    </section>
+  </div>
+  <div class="panel" id="airlinesPanel" style="margin-top:20px"></div>
+  <div class="panel" style="margin-top:20px">
+    <h3>Check live routes and fares</h3>
+    <div class="links" id="travelLinks"></div>
+  </div>
+  <div class="next-step" data-step="travel"></div>
+</section>
+
+<!-- @include pages/itinerary/itinerary.html -->
+
+<!-- @include pages/budget/budget.html -->
+
+<!-- @include pages/deals/deals.html -->
+
+<!-- @include pages/trips/trips.html -->
+
+<!-- @include pages/settings/settings.html -->
+
+<!-- @include pages/help/help.html -->
+
+</main>
+
+<footer><div class="wrap"><p style="margin:0 0 8px"><a href="/">About Shaz does holidays</a> · <a href="/story/">Shaz's story</a> · <a href="/#pricing">Plans and pricing</a> · <span class="muted">Version {{VERSION}}</span></p>Some links are affiliate links: if you book through them we may earn a small commission, at no extra cost to you. Prices shown are indicative planning estimates in GBP, not quotes. Always confirm live prices, availability and travel advice before booking. Saved trips and places are kept on this device, and online on all your devices when sync is turned on in the Trip log. Deal alerts are saved online.</div></footer>
+<div class="pm-wrap" id="plansModal" hidden role="dialog" aria-modal="true" aria-labelledby="pm-title">
+  <div class="pm-box">
+    <button class="icon-btn pm-close" type="button" aria-label="Close" data-pm-close>✕</button>
+    <h2 id="pm-title">Get deals like these by email</h2>
+    <p class="muted">Two of the best deals we found from London today. Subscribers get alerts like these for the places they choose, the morning prices drop, with a hotel idea for each.</p>
+    <div class="pm-deals" id="pmDeals"><p class="muted small">Checking today's fares…</p></div>
+    <div class="pm-plans">
+      <div class="pm-plan"><b>Free</b><span class="pm-amt">£0</span><span class="small muted">Planner, 1 saved trip</span><span class="small muted">You're on this plan</span></div>
+      <div class="pm-plan"><b>Deals</b><span class="pm-amt">£3<small>/month</small></span><span class="small muted">Deal alerts, unlimited trips, tours, sync</span><a class="btn sm" href="#" data-pay="monthly">Get Deals monthly</a></div>
+      <div class="pm-plan best"><b>Annual <span class="tag">Best value</span></b><span class="pm-amt">£29<small>/year</small></span><span class="small muted">Everything in Deals for 12 months</span><a class="btn gold sm" href="#" data-pay="annual">Get the Annual plan</a></div>
+    </div>
+    <form id="pmLaunch" class="pm-launch" hidden onsubmit="return false">
+      <h3 style="margin:0 0 4px">Paid plans open soon</h3>
+      <p class="small muted">Join the launch list and we'll email you when deal alerts open.</p>
+      <div class="field"><label for="pm-email">Your email</label><input id="pm-email" type="email" autocomplete="email"></div>
+      <label class="small" style="display:flex;gap:8px;align-items:flex-start;margin-bottom:10px"><input type="checkbox" id="pm-consent" style="margin-top:3px"> Email me when paid plans open. I can unsubscribe at any time.</label>
+      <button class="btn" type="submit">Join the launch list</button>
+    </form>
+    <p class="small muted" style="margin:14px 0 0">Prices include VAT. The Annual plan saves £7 on paying monthly. Monthly plans can be cancelled any time. <a href="/#pricing">Compare plans</a></p>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+"use strict";
+
+/* @js */
+})();
+</script>
+</body>
+</html>
